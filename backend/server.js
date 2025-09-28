@@ -2,17 +2,16 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-app.use(cors({
-  origin: "https://fullstack-sneaker-shop-1.onrender.com",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+
 
 
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
 
 const app = express();
+app.use(cors({
+  origin: '*'
+}));
 
 // ✅ Allowed origins for local frontend
 const allowedOrigins = [

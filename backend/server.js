@@ -10,9 +10,13 @@ const productRoutes = require('./routes/productRoutes');
 
 const app = express();
 app.use(cors({
-  origin: '*'
+  origin: [
+    "https://full-stack-sneaker-e0a5ndfdt-kshitij-mishras-projects-53ae30c4.vercel.app", // your frontend Vercel URL
+    "http://localhost:5173" // local dev
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
-
 // ✅ Allowed origins for local frontend
 const allowedOrigins = [
   'http://localhost:5173',

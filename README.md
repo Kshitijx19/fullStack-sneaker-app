@@ -99,7 +99,7 @@ psql -U <your_postgres_username> -d sneaker_shop -f backend/db.sql
 4. Create a `.env` file with:
 
 ```env
-DATABASE_URL=postgresql://<username>:<password>@localhost:5432/visa_db
+DATABASE_URL=postgresql://<username>:<password>@localhost:5432/sneaker_shop
 JWT_SECRET=supersecretkey123
 NODE_ENV=development
 PORT=4004
@@ -130,7 +130,7 @@ npm install
 3. Create a `.env` file with:
 
 ```env
-VITE_API_URL=http://localhost:4004/api
+VITE_API_URL=http://localhost:4004
 ```
 
 4. Run the frontend:

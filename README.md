@@ -89,11 +89,11 @@ npm install
 
 -Create a database named visa_db:
 ```bash
-createdb visa_db
+createdb sneaker_shop
 ```
 -Import the schema + sample data from the dump file:
 ```bash
-psql -U <your_postgres_username> -d visa_db -f backend/db/visa_db_dump.sql
+psql -U <your_postgres_username> -d sneaker_shop -f backend/db.sql
 ```
 
 4. Create a `.env` file with:
